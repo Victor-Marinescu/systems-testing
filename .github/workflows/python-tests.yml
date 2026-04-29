@@ -18,5 +18,6 @@ jobs:
         python-version: "3.10"
 
     - name: Run Unit Tests
+      working-directory: laboratories/cicd-documentation
       run: |
-        python -m unittest laboratories\cicd-documentation\test_tree.py
+        python3 -m unittest test_tree.py
